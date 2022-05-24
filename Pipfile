@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+uvicorn = "*"
+sqlalchemy = "*"
+rq = "*"
+alembic = "*"
+requests = "*"
+redis = "*"
+psycopg2-binary = "*"
+pyjwt = "*"
+firebase-admin = "*"
+python-dotenv = "*"
+python-multipart = "*"
+boto3 = "*"
+awesome-slugify = "*"
+numpy = "*"
+fastapi-oidc = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
+
+[scripts]
+dev = 'pipenv run uvicorn app.main:app --reload'
